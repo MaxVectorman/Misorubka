@@ -61,8 +61,8 @@ body {
 	min-height:710px;
 	background: url(../img/bg_dot.png) repeat;
 	overflow:hidden;
-	/* display: table-cell;
-	vertical-align: middle;*/
+	display: table-cell;
+	vertical-align: middle;
 }
 
 /* @media screen and (max-width: 750px) {
