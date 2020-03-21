@@ -61,8 +61,8 @@ body {
 	min-height:710px;
 	background: url(../img/bg_dot.png) repeat;
 	overflow:hidden;
-	display: table-cell;
-	vertical-align: middle;
+	/* display: table-cell;
+	vertical-align: middle; */
 }
 
 /* @media screen and (max-width: 750px) {
@@ -418,7 +418,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 3000px) {
+@media screen and (max-width: 1200px) {
 
 	.content_menu  {
 		width: 750px;
