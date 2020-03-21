@@ -1,0 +1,295 @@
+html, body {
+	height: 100%;
+	overflow: auto;
+}
+
+.avgrund-popin {
+	position: absolute;
+	background: #fff;
+	padding: 10px;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.avgrund-overlay {
+	background: #000;
+	width: 100%;
+	position: relative;
+	top: -1500px;
+	left: 0;
+	z-index: 101;
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+body.avgrund-ready,
+.avgrund-ready .avgrund-popin,
+.avgrund-ready .avgrund-overlay {
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	-webkit-transition: 0.3s all ease-out;
+	-moz-transition: 0.3s all ease-out;
+	-ms-transition: 0.3s all ease-out;
+	-o-transition: 0.3s all ease-out;
+	transition: 0.3s all ease-out;
+}
+
+body.avgrund-active {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
+	overflow: hidden;
+}
+
+.avgrund-active .avgrund-popin {
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=100);
+
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.avgrund-active .avgrund-overlay {
+	visibility: visible;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	height: 20000px;
+}
+
+.avgrund-popin.stack {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.avgrund-active .avgrund-popin.stack {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.avgrund-active .avgrund-blur {
+	-webkit-filter: blur(1px);
+	-moz-filter: blur(1px);
+	-ms-filter: blur(1px);
+	-o-filter: blur(1px);
+	filter: blur(1px);
+}
+
+/* Optional close button styles */
+.avgrund-close {
+	display: block;
+	color: #555;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 6px;
+	right: 10px;
+}
+
+/* FORM STYLE */
+.bron input, .bron button {
+    background: white;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 16px;
+    outline: none;
+}
+.bron button {
+	cursor: pointer;
+}
+.booking__date-picker {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    -webkit-appearance: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.jq-selectbox__select {
+    height: auto;
+    padding: 10px 25px 12px 10px;
+    border-radius: 4px 0 0 4px;
+    background: linear-gradient(#FFF, #FFFFFF);
+    box-shadow: none;
+    border: 1px solid #CCC;
+    font: inherit;
+    font-size: 16px;
+    outline: none;
+}
+.jq-selectbox {
+    width: 100%;
+    padding-right: 45px;
+}
+.bron .time {
+    padding-left: 20px;
+    width: 140px;
+}
+.booking__row {
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    float: left;
+}
+.booking__date-calendar_btn {
+    background: url(../img/calendar.png) 50% 50% no-repeat;
+    background-size: 22px 22px;
+    height: 44px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    width: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+	border: 1px solid #CCC;
+    border-left: none;
+}
+.pickmeup{
+	z-index: 99999;
+}
+.jq-selectbox__select-text, .jq-selectbox__trigger, .jq-selectbox__select:focus, .jq-selectbox__select-text:focus, .jq-selectbox__trigger:focus {
+    outline: none;
+    box-shadow: none;
+    border: none!important;
+}
+.jq-selectbox__trigger-arrow {
+    top: 17px;
+}
+.bron label {
+    display: block;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+.bron button, .guest {
+    padding: 0;
+    width: 45px;
+    margin: 0;
+    border: 1px solid #CFCFCF;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    height: auto;
+}
+.time .jq-selectbox__select {
+    border-radius: 4px;
+}
+.bronir .left-b{
+    width: 50%;
+    float: left;
+	padding: 0 10px;
+}
+.bronir .right-b{
+    width: 50%;
+    float: left;
+	padding: 0 10px;
+}
+input.phone {
+    
+}
+.bronir .fio,.bronir input.phone {
+    width: 100%;
+	box-sizing: border-box;
+    padding: 10px;
+	border: 1px solid #CFCFCF;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.left-bf{
+	width: 65%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.right-bf{
+	width: 35%;
+    float: left;
+	padding: 0 10px;
+}
+.message {
+    display: block;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 20px 10px;
+    outline: none;
+    font-size: 16px;
+    height: 60px;
+    border: 1px solid #CFCFCF;
+}
+.bron input[type="submit"] {
+    background-color: #d5a353;
+    color: #191514;
+    display: block;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 0.89em;
+    padding: 1.15em 2.1em 0.9em 2.1em;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bron input[type="submit"]:hover {
+    text-decoration: none;
+}
+.both-b:before{
+	content: '';
+	display: block;
+	clear: both;
+}
+.bron{
+	padding: 20px 0;
+    box-sizing: border-box;
+}
+.jq-selectbox__dropdown{
+	top: 44px;
+}
+.jq-selectbox ul{
+	max-height: 174px;
+}
+.good{
+	font-family: 'ChineseRocksRegular';
+    font-size: 34px;
+    text-align: center;
+    padding: 170px 20px;
+}

@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'ChineseRocksRegular';
+    src: url(../fonts/ChineseRocksRegular.eot);
+    src: url(../fonts/ChineseRocksRegular.eot%3F) format('embedded-opentype'),
+    url(../fonts/ChineseRocksRegular.woff) format('woff'),
+    url(../fonts/ChineseRocksRegular.ttf) format('truetype'),
+    url(../fonts/ChineseRocksRegular.svg) format('svg');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeliosCondBold';
+    src: url(../fonts/HeliosCondBold.eot);
+    src: url(../fonts/HeliosCondBold.eot%3F) format('embedded-opentype'),
+    url(../fonts/HeliosCondBold.woff) format('woff'),
+    url(../fonts/HeliosCondBold.ttf) format('truetype'),
+    url(../fonts/HeliosCondBold.svg) format('svg');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeliosCondNormal';
+    src: url(../fonts/HeliosCondRegular.eot);
+    src: url(../fonts/HeliosCondRegular.eot%3F) format('embedded-opentype'),
+    url(../fonts/HeliosCondRegular.woff) format('woff'),
+    url(../fonts/HeliosCondRegular.ttf) format('truetype'),
+    url(../fonts/HeliosCondRegular.svg) format('svg');
+    font-style: normal;
+}
+
+* {
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'HeliosCondNormal';
+}
+
+div {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+body {
+	padding:0px;
+	margin:0px;
+}
+
+.wrap {
+	
+}
+
+.slide1{
+    position: relative;
+	padding: 50px 0px 100px 0px;
+	width:100%;
+	height:100vh;
+	min-height:710px;
+	background: url(../img/bg_dot.png) repeat;
+	overflow:hidden;
+	/* display: table-cell;
+	vertical-align: middle;*/
+}
+
+@media screen and (max-width: 750px) {
+	.bgvideo {
+		display:none;
+	}
+	.wrap {
+		background: url(../img/bg_mobile.jpg) center center no-repeat;
+	}
+	.slide1 {
+		background: rgba(0,0,0,0.5);
+	}
+}
+
+.bgvideo
+{
+	 position: absolute;
+	 right: 0;
+	 bottom: 0;
+	 min-width: 100%;
+	 min-height: 100%;
+	 width: auto;
+	 height: auto;
+	 z-index: -9999;
+	 text-align:center;
+     -moz-transform:scale(1.4);
+     -webkit-transform:scale(1.4);
+     -o-transform:scale(1.4);
+     -ms-transform:scale(1.4);
+	 left:50%;
+	 top:50%;
+	 transform:scale(1.4) translate(-35%, -35%);
+}
+
+.logo {
+	text-transform:uppercase;
+	font-family: 'ChineseRocksRegular';
+	letter-spacing: 1px;
+	font-size: 22px;
+	line-height:22px;
+	color:#fff;
+	width: 85px;
+	height: 40px;
+	position:absolute;
+	top:40px;
+	left:50px;
+	display:block;
+}
+
+.ferma {
+	font-family: 'ChineseRocksRegular';
+	letter-spacing: 1px;
+	font-size: 22px;
+	line-height:22px;
+	color:#fff;
+	text-align:right;
+	text-decoration:none;
+	width: 95px;
+	height: 40px;
+	position:absolute;
+	top:40px;
+	right:50px;
+	display:block;
+}
+
+.logo span, .ferma span {
+	color: #f00;
+	font-family: 'ChineseRocksRegular';
+}
+
+.info_bottom {
+	position: absolute;
+	bottom:0px;
+	z-index:0;
+	width:100%;
+	height:130px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	color:#fff;
+	padding: 20px 0px 0px 0px;
+} 
+
+
+.info_bottom .address1, .info_bottom .socials_block, .info_bottom .address2 {
+	color:#fff;
+	float:left;
+	width:33%;
+	height:100%;
+	text-align:center;
+	font-family: "HeliosCondBold";
+	padding: 10px 0px 0px 0px;
+	text-transform:uppercase;
+	font-size: 14px;
+}
+
+.socials_block {
+	position: relative;
+	margin-top: 30px
+}
+
+.city {
+	padding: 0px 0px 12px 0px;
+	color:#d5a353;
+}
+
+.new {
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.phone {
+	font-size:18px;
+}
+
+.socials {
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.socials a.vk,.socials a.fb,.socials a.inst {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  overflow: hidden;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.4s all ease-in-out 0s;
+  margin: 0 10px;
+}
+.socials a.vk:hover, .socials a.fb:hover, .socials a.inst:hover {
+  background: #e30613;
+}
+
+.socials a.vk:hover i:first-of-type, .socials a.fb:hover i:first-of-type,.socials a.inst:hover i:first-of-type   {
+  top: 0;
+}
+.socials a.vk:hover i:last-of-type, .socials a.fb:hover i:last-of-type, .socials a.inst:hover i:last-of-type {
+  top: 0;
+}
+.socials a.vk i:first-of-type, .socials a.fb i:first-of-type, .socials a.inst i:first-of-type {
+  transition: 0.4s all ease-in-out 0s;
+  position: relative;
+  top: -36px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+.socials a.vk i:last-of-type, .socials a.fb i:last-of-type, .socials a.inst i:last-of-type {
+  transition: 0.4s all ease-in-out 0s;
+  position: relative;
+  top: -36px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.social_box {
+	height: 50px;
+	width: 290px;
+	margin: 0 auto;
+}
+
+.social_container {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.city.soc {
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 14px;
+}
+
+.socials {
+	justify-content: center;
+}
+
+a.copyright {
+	font-size:10px;
+	text-decoration:none;
+	position:relative;
+	top:5px;
+	color: #d5a353;
+}
+
+a.copyright:hover {
+	text-decoration:underline;
+}
+
+.content_block {
+	position:relative;
+	/*top:150px;*/
+}
+
+.main_img {
+	background: url(../img/main_text.png) no-repeat;
+	background-size: 400px 236px;
+	width: 400px;
+	height: 236px;
+	margin: 0 auto;
+}
+.main_text {
+	font-family: 'HeliosCondBold';
+	margin: 0 auto;
+	width:300px;
+	text-align:center;
+	text-transform:uppercase;
+	position:relative;
+	top:-32px;
+	font-size:20px;
+	color:#fff;
+}
+.main_text span {
+	margin: 0px 30px;
+}
+
+.sub_text {
+	font-family: Georgia;
+	font-style:italic;
+	margin: 0 auto;
+	width:300px;
+	text-align:center;
+	color:#fff;
+}
+
+.content_menu {
+	display: flex;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 353px;
+}
+
+.content_column {
+
+}
+
+.content_column.right {
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.restaurants {
+	display: flex;
+	justify-content: center;
+	color: #f00;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.restaurants_adress {
+	font-size: 18px;
+	/* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9); */
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px 45px;
+}
+
+.restaurants_adress.right {
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.buttons {
+	max-width:750px;
+	margin: 18px auto 0px auto;
+	text-align:center;
+}
+
+.buttons a {
+	background-color: #d5a353;
+	color: #191514;
+	display: inline-block;
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 0.89em;
+	padding: 1.15em 1.5em 0.9em 1.5em;
+	letter-spacing: 0.3px;
+	font-weight: 600;
+	position: relative;
+	overflow: hidden;
+	margin: 0px 15px 10px 15px;
+	width: 150px;
+	height: 50px;
+	text-decoration:none;
+}
+
+.buttons a:after {
+	background: #fff;
+	content: "";
+	height: 200px;
+	left: -95px;
+	opacity: .2;
+	position: absolute;
+	top: -50px;
+	-webkit-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	transform: rotate(35deg);
+	-webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	width: 50px;
+	z-index: 10;
+}
+
+.buttons a:hover:after{
+    left: 120%;
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.avgrund-popin {
+	color:#000;
+}
+
+.title {
+	font-family: 'ChineseRocksRegular';
+	margin:0px 0px 20px 0px;
+	padding:0px;
+	font-size:34px;
+	text-align:center;
+}
+
+.sub_title {
+	font-weight:bold;
+	font-size:22px;
+	text-align:center;
+}
+
+.popup_content {
+	padding: 10px 20px 0px 20px;
+}
+
+a {
+	color:#e30613;
+	text-decoration:underline;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+
+@media screen and (max-width: 300px) {
+	.info_bottom {
+		height: 200px;
+	}
+	.address1 {
+		padding-top: 35px !important;
+		font-size: 23px !important;
+	}
+	.address2 {
+		padding-top: 35px !important;
+		font-size: 23px !important;
+	}
+	.phone {
+		font-size: 25px;
+	}
+	.sub_text {
+		font-size: 30px;
+		width: 450px;
+	}
+	.buttons a {
+		height: 100 !important;
+		width: 200 !important;
+	}
+}
