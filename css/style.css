@@ -47,7 +47,7 @@ body {
 
 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 9000px) { */
 
 .wrap {
 	
@@ -418,7 +418,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 3000px) {
 
 	.content_menu  {
 		width: 750px;
