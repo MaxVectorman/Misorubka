@@ -415,6 +415,10 @@ a:hover {
 	display: block;
 	margin: 0 auto;
 }
+
+.menu-mobile {
+	display: hidden;
+}
 }
 
 
@@ -519,6 +523,19 @@ a:hover {
 	.fa-instagram:before {
 		font-size: 45px;
 	}
+	.menu {
+	display: none;
+	}
+	.menu-mobile {
+		display: visible !important;
+	}
+	.menu-mobile {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+
 
 }
 
