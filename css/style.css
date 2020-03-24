@@ -417,7 +417,7 @@ a:hover {
 }
 
 .menu-mobile {
-	display: hidden;
+	display: none;
 }
 }
 
@@ -527,7 +527,7 @@ a:hover {
 	display: none;
 	}
 	.menu-mobile {
-		display: visible !important;
+		display: visible;
 	}
 	.menu-mobile {
 		width: 100%;
@@ -536,8 +536,3 @@ a:hover {
 		margin: 0 auto;
 	}
 }
-
-
-
-
-
