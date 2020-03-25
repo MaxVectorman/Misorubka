@@ -102,12 +102,18 @@ a
         -moz-box-sizing: border-box
         box-sizing: border-box
 
-.clearfix:after, .wrapper:after
-    content: "."
-    display: block
-    height: 0
+
+.clearfix:before, .clearfix:after 
+    content: " "
+    display: table
+
+.clearfix:after
     clear: both
-    visibility: hidden
+
+.left
+    float:left
+.right
+    float:right
 
 .container
     width: 1200px

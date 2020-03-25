@@ -83,3 +83,20 @@ jQuery(document).ready(function($){
         $input.pickmeup('show');
     });
 });
+
+
+
+
+
+
+
+	// Фиксированная шапка при скролле
+	$("#header").removeClass("default");
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 20) {
+			$("#header").addClass("default").fadeIn('fast');
+		} else {
+			$("#header").removeClass("default").fadeIn('fast');
+		};
+	});
+

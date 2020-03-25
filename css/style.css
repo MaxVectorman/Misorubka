@@ -44,6 +44,8 @@ body {
 	margin:0px;
 }
 
+a {text-decoration: none;}
+
 
 
 
@@ -254,9 +256,9 @@ a.copyright {
 	color: #d5a353;
 }
 
-a.copyright:hover {
+/* a.copyright:hover {
 	text-decoration:underline;
-}
+} */
 
 .content_block {
 	position:relative;
@@ -536,3 +538,5 @@ a:hover {
 		margin: 0 auto;
 	}
 }
+
+a {text-decoration: none;}
