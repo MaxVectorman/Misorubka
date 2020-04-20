@@ -311,8 +311,12 @@ body {
     height: 65px;
     top: -85px; }
 
-  .title-item {
-    width: 570px; }
+  .title {
+    margin: 10px 0; }
+    .title-first {
+      margin: 70px 0 5px; }
+    .title-item {
+      width: 570px; }
 
   .menu__btn {
     visibility: visible; }
