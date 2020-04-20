@@ -331,7 +331,7 @@ body {
     .title-item {
       width: 365px;
       height: 40px; } }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .menu-carts {
     width: 100%; }
     .menu-carts__item {
