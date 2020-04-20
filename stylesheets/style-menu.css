@@ -323,3 +323,29 @@ body {
 
   .menu-carts {
     width: 100%; } }
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 10px 0; }
+    .title-first {
+      margin: 70px 0 5px; }
+    .title-item {
+      width: 365px;
+      height: 40px; } }
+@media screen and (max-width: 375px) {
+  .menu-carts {
+    width: 100%; }
+    .menu-carts__item {
+      width: 177px;
+      margin: 5px;
+      height: 360px; }
+    .menu-carts__title {
+      font-size: 14px;
+      height: 35px; }
+    .menu-carts__size {
+      font-size: 12px; }
+    .menu-carts__description {
+      font-size: 12px;
+      padding: 5px; }
+
+  .cart-img {
+    height: 128px; } }
