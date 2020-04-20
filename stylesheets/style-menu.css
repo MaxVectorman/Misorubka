@@ -24,9 +24,7 @@ body {
   background-color: #ffffff;
   height: 100%;
   position: relative;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: 14px; }
 
 blockquote, q {
   quotes: none; }
