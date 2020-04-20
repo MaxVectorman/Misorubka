@@ -332,6 +332,9 @@ body {
       width: 570px;
       height: 40px; } }
 @media screen and (max-width: 415px) {
+  .title-item {
+    width: 365px; }
+
   .menu-carts {
     width: 100%; }
     .menu-carts__item {
