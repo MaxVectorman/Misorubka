@@ -67,6 +67,8 @@ body
 
 .title
 	display: flex
+	justify-content: center
+	margin: 85px 0 20px
 	&-item
 		display: flex
 		font-size: 30px
@@ -75,12 +77,10 @@ body
 		text-transform: uppercase
 		width: 1200px
 		height: 60px
-		margin: 10px auto
 		justify-content: center
 		align-items: center
 		background: #a5a5a5
 		border-radius: 5px
-		/*text-shadow: 1px 1px 5px #444*/
 
 
 
@@ -167,6 +167,9 @@ body
 			font-weight: bold
 
 
+.menu__btn
+	visibility: hidden
+
 
 .footer
 	display: block
@@ -174,9 +177,26 @@ body
 	border-top: 1px solid #fff
 	background: #000
 
-@media screen and (max-width: 1200px)
-	.header
+@media screen and (max-width: 1240px)
+	/*.header
 		visibility: hidden
-	.header-menu
-		visibility: hidden
+		&-menu
+			visibility: hidden*/
+	.title
+		&-item
+			width: 1140px
+	.menu
+		&-carts
+			width: 100%
+			&__item
+				margin: 10px
 
+@media screen and (max-width: 1000px)
+	
+	.title
+		&-item
+			width: 870px
+	.menu
+		&-carts
+			&__item
+				margin: 15px
