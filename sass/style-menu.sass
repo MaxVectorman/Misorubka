@@ -173,6 +173,8 @@ body
 
 .menu__btn
 	visibility: hidden
+	width: 0
+	height: 0
 
 
 .footer
@@ -205,20 +207,14 @@ body
 @media screen and (max-width: 768px)
 
 	.header
-		visibility: hidden
-			width: 0
-			height: 0
+		display: none
 		&-menu
-			visibility: hidden
-			width: 0
-			height: 0
+			display: none
 	.logo
 		height: 65px
 		margin-bottom: -55px
 		&-img
-			visibility: hidden
-			width: 0
-			height: 0
+			display: none
 	.logo
 		&-img__2
 			visibility: visible
@@ -234,6 +230,11 @@ body
 		top: -85px
 	.title
 		&-item
-			width: 570px
+			width: 100%
 	.menu__btn
 		visibility: visible
+
+	.menu
+		&-carts
+			width: 100%
+			&__item
