@@ -160,7 +160,11 @@ body {
 .title {
   display: flex;
   justify-content: center;
-  margin: 85px 0 20px; }
+  margin: 20px 0; }
+  .title-first {
+    display: flex;
+    justify-content: center;
+    margin: 85px 0 15px; }
   .title-item {
     display: flex;
     font-size: 30px;
@@ -276,7 +280,7 @@ body {
     width: 100%; }
     .menu-carts__item {
       margin: 10px; } }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .title-item {
     width: 870px; }
 
@@ -308,7 +312,7 @@ body {
     top: -85px; }
 
   .title-item {
-    width: 100%; }
+    width: 570px; }
 
   .menu__btn {
     visibility: visible; }
