@@ -101,6 +101,10 @@ a {
 .clearfix:after {
   clear: both; }
 
+.container {
+  width: 1240px;
+  margin: 0 auto; }
+
 body {
   /*background-color: #e0c9aa */
   background: #ddd; }
@@ -228,7 +232,8 @@ body {
   margin: 20px;
   border-radius: 5px;
   background: #fff;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  width: 1200px; }
   .bar-title {
     display: flex;
     justify-content: center;
@@ -279,7 +284,10 @@ body {
   .menu-carts {
     width: 100%; }
     .menu-carts__item {
-      margin: 10px; } }
+      margin: 10px; }
+
+  .bar {
+    width: 870px; } }
 @media screen and (max-width: 1024px) {
   .title-item {
     width: 870px; }
@@ -316,24 +324,24 @@ body {
     .title-first {
       margin: 70px 0 5px; }
     .title-item {
-      width: 570px; }
+      width: 570px;
+      height: 40px; }
 
   .menu__btn {
     visibility: visible; }
 
   .menu-carts {
-    width: 100%; } }
-@media screen and (max-width: 768px) {
-  .title {
-    margin: 10px 0; }
-    .title-first {
-      margin: 70px 0 5px; }
-    .title-item {
-      width: 570px;
-      height: 40px; } }
+    width: 100%; }
+
+  .title-item.for_bar {
+    width: 728px; }
+
+  .bar {
+    margin: 24px; } }
 @media screen and (max-width: 415px) {
   .title-item {
-    width: 365px; }
+    width: 365px;
+    font-size: 18px; }
 
   .menu-carts {
     width: 100%; }
@@ -352,4 +360,47 @@ body {
       text-align: center; }
 
   .cart-img {
-    height: 128px; } }
+    height: 128px; }
+
+  .title-item.for_bar {
+    width: 365px; }
+
+  .bar {
+    margin: 5px 24px; }
+    .bar-title {
+      font-size: 14px; }
+      .bar-title__sub {
+        font-size: 14px; }
+    .bar-subject {
+      font-size: 12px;
+      margin: 10px 5px; }
+      .bar-subject__eng {
+        display: box; }
+      .bar-subject__price {
+        margin: 5px; } }
+@media screen and (max-width: 375px) {
+  .title-item.for_bar {
+    width: 330px; }
+
+  .dash {
+    display: none; } }
+@media screen and (max-width: 320px) {
+  .menu-carts {
+    width: 100%; }
+    .menu-carts__item {
+      width: 285px; }
+    .menu-carts__title {
+      font-size: 14px;
+      height: 35px; }
+    .menu-carts__size {
+      font-size: 12px; }
+    .menu-carts__description {
+      font-size: 12px;
+      padding: 5px;
+      text-align: center; }
+
+  .cart-img {
+    height: 200px; }
+
+  .title-item {
+    width: 285px; } }

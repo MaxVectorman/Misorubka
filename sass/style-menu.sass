@@ -136,12 +136,12 @@ body
 		&__item
 			width: 100%
 
-
 .bar
 	margin: 20px
 	border-radius: 5px
 	background: #fff
 	padding-bottom: 15px
+	width: 1200px
 	&-title
 		display: flex
 		justify-content: center
@@ -197,6 +197,8 @@ body
 			width: 100%
 			&__item
 				margin: 10px
+	.bar
+		width: 870px
 
 @media screen and (max-width: 1024px)
 	
@@ -239,6 +241,7 @@ body
 			margin: 70px 0 5px
 		&-item
 			width: 570px
+			height: 40px
 	.menu__btn
 		visibility: visible
 
@@ -247,15 +250,10 @@ body
 			width: 100%
 			&__item
 
-@media screen and (max-width: 768px)
-	
-	.title
-		margin: 10px 0
-		&-first
-			margin: 70px 0 5px
-		&-item
-			width: 570px
-			height: 40px
+	.title-item.for_bar
+		width: 728px
+	.bar
+		margin: 24px
 
 @media screen and (max-width: 415px)
 
@@ -263,6 +261,7 @@ body
 		&-first
 		&-item
 			width: 365px
+			font-size: 18px
 
 	.menu
 		&-carts
@@ -283,3 +282,50 @@ body
 	.cart
 		&-img
 			height: 128px
+
+	.title-item.for_bar
+		width: 365px
+	.bar
+		margin: 5px 24px 
+		&-title
+			font-size: 14px
+			&__sub
+				font-size: 14px
+		&-subject
+			font-size: 12px
+			margin: 10px 5px
+			&__eng
+				display: box
+			&__price
+				margin: 5px
+
+@media screen and (max-width: 375px)
+
+	.title-item.for_bar
+		width: 330px
+	.dash
+		display: none
+
+@media screen and (max-width: 320px)
+
+	.menu
+		&-carts
+			width: 100%
+			&__item
+				width: 285px
+			&__title
+				font-size: 14px
+				height: 35px
+			&__size
+				font-size: 12px
+			&__description
+				font-size: 12px
+				padding: 5px
+				text-align: center
+	.cart
+		&-img
+			height: 200px
+	.title
+		&-first
+		&-item
+			width: 285px

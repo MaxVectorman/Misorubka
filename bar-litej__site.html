@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,400,400i,500,600,700,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/icomoon.css">
 <link href="stylesheets/style-menu.css" rel="stylesheet" type="text/css">
+<link href="css/menu-burger.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
 <script>
 document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
@@ -29,7 +30,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 		document.createElement('time'   );
 	</script>
 	<![endif]-->
-
+<!-- 
 <div class="logo"><img src="img/logo.png" alt="" class="logo-img"></div>
 <div id="header" class="clearfix">
 	<div class="header-menu">
@@ -65,23 +66,88 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<a href="menu-litej__site.html" class="header-menu__link attention">Меню кухня</a>
 		</div>
 	</div>
+</div> -->
+<!-- /.header -->
+
+<div class="logo">
+	<img src="img/logo.png" alt="" class="logo-img">
+	<img src="img/logo.png" alt="" class="logo-img__2">
+</div>
+<div id="header" class="clearfix">
+	<img src="img/logo.png" alt="" class="logo-img__2">
+	<div class="header-menu">
+		<div class="header-menu__item">
+			<a href="index.html" class="header-menu__link general">Главная</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="" class="header-menu__link attention">Акции</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="#burgers" class="header-menu__link">Бургеры</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="#steaks" class="header-menu__link">Стейки</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="#snacks" class="header-menu__link">Закуски</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="#salads" class="header-menu__link">Салаты</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="#sauces" class="header-menu__link">Соусы</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="#desserts" class="header-menu__link">Десерты</a>
+		</div>
+		<span class="line">&#124;</span>
+		<div class="header-menu__item">
+			<a href="menu-litej__site.html" class="header-menu__link attention">Меню кухня</a>
+		</div>
+	</div>
+<!-- =================================== -->	
+	<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="index.html">Главная</a></li>
+		<li><a class="menu__item--red" href="#">Акции</a></li>
+		<li><a class="menu__item" href="#burgers">Бургеры</a></li>
+		<li><a class="menu__item" href="#steaks">Стейки</a></li>
+		<li><a class="menu__item" href="#snacks">Закуски</a></li>
+		<li><a class="menu__item" href="#salads">Салаты</a></li>
+		<li><a class="menu__item" href="#sauces">Соусы</a></li>
+		<li><a class="menu__item" href="#desserts">Десерты</a></li>
+		<li><a class="menu__item--red" href="menu-litej__site.html">Меню кухня</a></li>
+    </ul>
+  </div>
+<!-- =================================== -->	
 </div>
 <!-- /.header -->
 
-
-<section class="title">
-	<a name="burgers" class="title-item">Пиво</a>
+<section class="title-first">
+	<a name="burgers" class="title-item for_bar">Пиво</a>
 </section>
 <!-- /.title -->
 
-<div class="container">
+<div class="menu-carts ">
 	<div class="bar">
 		<div class="bar-title">Разливное пиво</div>
 		<!-- /.bar-title -->
 		<div class="bar-item">
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -91,7 +157,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Милк оф амнезия тропик ИПА 5.2%. Россия &#47;
+					Милк оф амнезия тропик ИПА 5.2%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Milk of amnesia Tropic Ipa 5.2%. Russia
 					</span>
@@ -101,7 +167,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Клаштер лагер 5%. Чехия &#47;
+					Клаштер лагер 5%. Чехия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Klaster Svetle 5%. Czech
 					</span>
@@ -111,7 +177,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Майзелс Вайс Ориджинал пшеничное 5.2%. Германия &#47;
+					Майзелс Вайс Ориджинал пшеничное 5.2%. Германия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Maisels Original Weisse 5.2%. Germany
 					</span>
@@ -121,7 +187,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Ойстер Стаут 4.5%. Англия &#47;
+					Ойстер Стаут 4.5%. Англия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Oyster Stout 4.5%. England
 					</span>
@@ -131,7 +197,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Фурнье Сидр сухой 3%. Франция &#47;
+					Фурнье Сидр сухой 3%. Франция <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Fournier Cider Brut 3%. France
 					</span>
@@ -141,7 +207,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бун Крик 4%. Бельгия &#47;
+					Бун Крик 4%. Бельгия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Boon kriek 4%. Belgium
 					</span>
@@ -151,7 +217,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Стик Э Фингер Апа 4.6%. Дания &#47;
+					Стик Э Фингер Апа 4.6%. Дания <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Stick A Finger APA 4.6%. Danmark
 					</span>
@@ -164,10 +230,10 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 	</div>
 	<!-- /.bar -->
 </div>
-<!-- /.container -->
+<!-- /.menu-carts  -->
 
 
-<div class="container">
+<div class="menu-carts ">
 	<div class="bar">
 		<div class="bar-title">Бутылочное пиво</div>
 		<div class="bar-title__sub">Россия</div>
@@ -175,7 +241,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 		<div class="bar-item">
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -185,7 +251,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Милк оф амнезия тропик ИПА 5.2%. Россия &#47;
+					Милк оф амнезия тропик ИПА 5.2%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Milk of amnesia Tropic Ipa 5.2%. Russia
 					</span>
@@ -195,7 +261,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -205,7 +271,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -215,7 +281,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -225,7 +291,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -235,7 +301,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -245,7 +311,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -258,21 +324,21 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 	</div>
 	<!-- /.bar -->
 </div>
-<!-- /.container -->
+<!-- /.menu-carts  -->
 
 <section class="title">
-	<a name="burgers" class="title-item">Пиво</a>
+	<a name="burgers" class="title-item for_bar">Пиво</a>
 </section>
 <!-- /.title -->
 
-<div class="container">
+<div class="menu-carts ">
 	<div class="bar">
 		<div class="bar-title">Разливное пиво</div>
 		<!-- /.bar-title -->
 		<div class="bar-item">
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -282,7 +348,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Милк оф амнезия тропик ИПА 5.2%. Россия &#47;
+					Милк оф амнезия тропик ИПА 5.2%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Milk of amnesia Tropic Ipa 5.2%. Russia
 					</span>
@@ -292,7 +358,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -302,7 +368,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -312,7 +378,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -322,7 +388,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -332,7 +398,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -342,7 +408,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -355,21 +421,21 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 	</div>
 	<!-- /.bar -->
 </div>
-<!-- /.container -->
+<!-- /.menu-carts  -->
 
 <section class="title">
-	<a name="burgers" class="title-item">Пиво</a>
+	<a name="burgers" class="title-item for_bar">Пиво</a>
 </section>
 <!-- /.title -->
 
-<div class="container">
+<div class="menu-carts ">
 	<div class="bar">
 		<div class="bar-title">Разливное пиво</div>
 		<!-- /.bar-title -->
 		<div class="bar-item">
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -379,7 +445,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Милк оф амнезия тропик ИПА 5.2%. Россия &#47;
+					Милк оф амнезия тропик ИПА 5.2%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Milk of amnesia Tropic Ipa 5.2%. Russia
 					</span>
@@ -389,7 +455,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Клаштер лагер 5%. Чехия &#47;
+					Клаштер лагер 5%. Чехия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Klaster Svetle 5%. Czech
 					</span>
@@ -399,7 +465,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -409,7 +475,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -419,7 +485,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -429,7 +495,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -439,7 +505,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 			<!-- /.bar-subject -->
 			<div class="bar-subject">
 				<div class="bar-subject__rus">
-					Бланш Де Флер 4%. Россия &#47;
+					Бланш Де Флер 4%. Россия <span class="dash">&#47;</span>
 					<span class="bar-subject__eng">
 						Blanche de Fleur 4%. Russia
 					</span>
@@ -452,7 +518,7 @@ document.write('<script src="http://' + (location.host || 'localhost').split(':'
 	</div>
 	<!-- /.bar -->
 </div>
-<!-- /.container -->
+<!-- /.menu-carts  -->
 
 
 <!-- 
