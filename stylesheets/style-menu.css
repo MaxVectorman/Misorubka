@@ -396,6 +396,18 @@ body {
 
   .dash {
     display: none; } }
+@media screen and (max-width: 360px) {
+  .title-item {
+    width: 350px; }
+
+  .menu-carts {
+    width: 100%; }
+    .menu-carts__item {
+      width: 170px;
+      height: 400px; }
+
+  .cart-img {
+    height: 126px; } }
 @media screen and (max-width: 320px) {
   .menu-carts {
     width: 100%; }
