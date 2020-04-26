@@ -107,7 +107,17 @@ a {
 
 body {
   /*background-color: #e0c9aa */
-  background: #ddd; }
+  background: #ddd;
+  background: url(../img/background.jpg) no-repeat fixed #ddd;
+  background-size: 100%;
+  background-attachment: fixed;
+  z-index: -999; }
+
+.background {
+  position: absolute;
+  top: 30px;
+  max-width: 100%;
+  max-height: 100%; }
 
 .logo {
   display: flex;
@@ -180,6 +190,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #a5a5a5;
+    border: 2px solid #fff;
     border-radius: 5px; }
 
 .menu {
