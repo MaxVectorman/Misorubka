@@ -235,7 +235,7 @@ body {
     width: 100%; }
 
 .bar {
-  margin: 20px;
+  margin: 5px 20px;
   border-radius: 5px;
   background: #fff;
   padding-bottom: 15px;
@@ -243,29 +243,70 @@ body {
   .bar-title {
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
     padding: 10px 0;
     border-radius: 5px 5px 0 0;
-    background: #d5a353; }
+    background: #999; }
     .bar-title__sub {
-      display: flex;
-      justify-content: center;
       font-size: 18px;
-      padding: 8px 0;
-      background: #bbb; }
+      padding: 5px 30px;
+      color: #555;
+      background: #bbb;
+      border-top: 1px solid #fff; }
   .bar-subject {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     color: #333;
-    margin: 25px 30px;
-    border-bottom: 1px solid #ddd; }
+    margin: 40px 30px;
+    border-bottom: 1px solid #ddd;
+    line-height: 28px; }
     .bar-subject__rus {
-      font-weight: bold; }
+      font-weight: bold;
+      margin-right: 10px; }
     .bar-subject__eng {
       font-weight: normal; }
     .bar-subject__price {
-      font-weight: bold; }
+      font-weight: bold;
+      align-items: flex-start;
+      margin: 0 5px; }
+      .bar-subject__price--sub {
+        font-size: 16px;
+        font-weight: 500;
+        color: #555; }
+
+.bar-subject__price {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 63px;
+  margin-bottom: 5px; }
+
+.bar-subject__price--sub {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5px;
+  width: 62px; }
+
+.price-variable {
+  display: flex;
+  align-items: flex-end; }
+
+.title-item.for_bar {
+  background: #d5a353; }
+
+.italic {
+  display: flex;
+  font-family: "times new roman";
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 16px;
+  margin-bottom: 5px; }
 
 .logo-img__2 {
   visibility: hidden;
@@ -281,6 +322,7 @@ body {
   display: block;
   height: 200px;
   border-top: 1px solid #fff;
+  margin-top: 50px;
   background: #000; }
 
 @media screen and (max-width: 1240px) {
@@ -299,7 +341,13 @@ body {
     width: 870px; }
 
   .menu-carts__item {
-    margin: 15px; } }
+    margin: 15px; }
+
+  .bar {
+    width: 950px; }
+
+  .title-item.for_bar {
+    width: 950px; } }
 @media screen and (max-width: 768px) {
   .header {
     display: none; }
@@ -340,10 +388,10 @@ body {
     width: 100%; }
 
   .title-item.for_bar {
-    width: 728px; }
+    width: 727px; }
 
   .bar {
-    margin: 24px; } }
+    margin: 10px 20px; } }
 @media screen and (max-width: 415px) {
   .title-item {
     width: 365px;
@@ -375,30 +423,48 @@ body {
     height: 131px; }
 
   .title-item.for_bar {
-    width: 365px; }
+    width: 384px; }
 
   .bar {
-    margin: 5px 24px; }
+    margin: 5px 15px; }
     .bar-title {
       font-size: 14px; }
       .bar-title__sub {
         font-size: 14px; }
     .bar-subject {
       font-size: 12px;
-      margin: 10px 5px; }
+      margin: 20px 5px;
+      line-height: 16px; }
       .bar-subject__eng {
         display: box; }
       .bar-subject__price {
-        margin: 5px; } }
+        width: 38px; }
+        .bar-subject__price--sub {
+          font-size: 10px;
+          margin: 0; }
+
+  .italic {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 12px; } }
 @media screen and (max-width: 375px) {
   .title-item.for_bar {
     width: 330px; }
 
   .dash {
-    display: none; } }
+    display: none; }
+
+  .title-item.for_bar {
+    width: 355px; }
+
+  .bar {
+    margin: 5px 10px; } }
 @media screen and (max-width: 360px) {
   .title-item {
     width: 350px; }
+
+  .title-item.for_bar {
+    width: 312px; }
 
   .menu-carts {
     width: 100%; }
@@ -407,7 +473,13 @@ body {
       height: 400px; }
 
   .cart-img {
-    height: 126px; } }
+    height: 126px; }
+
+  .title-item.for_bar {
+    width: 340px; }
+
+  .bar {
+    margin: 5px 10px; } }
 @media screen and (max-width: 320px) {
   .menu-carts {
     width: 100%; }
@@ -434,4 +506,7 @@ body {
     height: 200px; }
 
   .title-item {
-    width: 270px; } }
+    width: 270px; }
+
+  .bar {
+    margin: 5px 5px; } }
