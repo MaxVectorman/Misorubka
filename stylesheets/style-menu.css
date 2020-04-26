@@ -300,7 +300,7 @@ body {
 
 .italic {
   display: flex;
-  font-family: "times new roman";
+  /*font-family: "times new roman" */
   font-size: 16px;
   color: #666;
   font-style: italic;
