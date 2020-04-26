@@ -228,13 +228,27 @@ body
 
 .stock
 	width: 1200px
-	height: 225px
 	margin-top: 15px
 	background: #000
+	margin: 20px
 	overflow: hidden
 	border-radius: 5px
 .stock:first-child
 	margin-top: 20px
+
+.stock
+	width: 580px
+	margin-top: 15px
+	background: #000
+	margin: 20px
+	overflow: hidden
+	border-radius: 5px
+.stock:first-child
+	margin-top: 20px
+
+.stock-img
+	height: 100%
+	width: 100%
 
 .footer
 	display: block
@@ -271,13 +285,7 @@ body
 		width: 950px
 	.stock
 		width: 870px
-		height: 165px
-		margin-top: 15px
-		background: #000
-		overflow: hidden
-		border-radius: 5px
-	.stock:first-child
-		margin-top: 20px
+
 
 @media screen and (max-width: 768px)
 
@@ -326,7 +334,6 @@ body
 		&-subject
 	.stock
 		width: 570px
-		height: 108px
 		margin-top: 15px
 		background: #000
 		overflow: hidden
@@ -395,13 +402,8 @@ body
 
 	.stock
 		width: 365px
-		height: 68px
-		margin-top: 15px
-		background: #000
-		overflow: hidden
-		border-radius: 5px
-	.stock:first-child
-		margin-top: 20px
+		margin: 5px 0
+
 
 @media screen and (max-width: 375px)
 
@@ -414,6 +416,8 @@ body
 		width: 355px
 	.bar
 		margin: 5px 10px
+	.stock
+		width: 365px
 
 @media screen and (max-width: 360px)
 
@@ -443,13 +447,16 @@ body
 	.bar
 		margin: 5px 10px
 
+	.stock
+		width: 350px
+
 @media screen and (max-width: 320px)
 
 	.menu
 		&-carts
 			width: 100%
 			&__item
-				width: 270px
+				width: 305px
 				height: 400px
 			&__title
 				font-size: 14px
@@ -467,11 +474,17 @@ body
 
 	.cart
 		&-img
-			height: 200px
+			height: 212px
 	.title
 		&-first
 		&-item
-			width: 270px
+			width: 305px
 
+	.title-item.for_bar
+		width: 305px
 	.bar
+		width: 305px
 		margin: 5px 5px
+
+	.stock
+		width: 305px

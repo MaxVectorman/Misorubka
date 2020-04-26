@@ -320,14 +320,29 @@ body {
 
 .stock {
   width: 1200px;
-  height: 225px;
   margin-top: 15px;
   background: #000;
+  margin: 20px;
   overflow: hidden;
   border-radius: 5px; }
 
 .stock:first-child {
   margin-top: 20px; }
+
+.stock {
+  width: 580px;
+  margin-top: 15px;
+  background: #000;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 5px; }
+
+.stock:first-child {
+  margin-top: 20px; }
+
+.stock-img {
+  height: 100%;
+  width: 100%; }
 
 .footer {
   display: block;
@@ -361,15 +376,7 @@ body {
     width: 950px; }
 
   .stock {
-    width: 870px;
-    height: 165px;
-    margin-top: 15px;
-    background: #000;
-    overflow: hidden;
-    border-radius: 5px; }
-
-  .stock:first-child {
-    margin-top: 20px; } }
+    width: 870px; } }
 @media screen and (max-width: 768px) {
   .header {
     display: none; }
@@ -417,7 +424,6 @@ body {
 
   .stock {
     width: 570px;
-    height: 108px;
     margin-top: 15px;
     background: #000;
     overflow: hidden;
@@ -483,14 +489,7 @@ body {
 
   .stock {
     width: 365px;
-    height: 68px;
-    margin-top: 15px;
-    background: #000;
-    overflow: hidden;
-    border-radius: 5px; }
-
-  .stock:first-child {
-    margin-top: 20px; } }
+    margin: 5px 0; } }
 @media screen and (max-width: 375px) {
   .title-item.for_bar {
     width: 330px; }
@@ -502,7 +501,10 @@ body {
     width: 355px; }
 
   .bar {
-    margin: 5px 10px; } }
+    margin: 5px 10px; }
+
+  .stock {
+    width: 365px; } }
 @media screen and (max-width: 360px) {
   .title-item {
     width: 350px; }
@@ -523,12 +525,15 @@ body {
     width: 340px; }
 
   .bar {
-    margin: 5px 10px; } }
+    margin: 5px 10px; }
+
+  .stock {
+    width: 350px; } }
 @media screen and (max-width: 320px) {
   .menu-carts {
     width: 100%; }
     .menu-carts__item {
-      width: 270px;
+      width: 305px;
       height: 400px; }
     .menu-carts__title {
       font-size: 14px;
@@ -547,10 +552,17 @@ body {
     font-size: 12px; }
 
   .cart-img {
-    height: 200px; }
+    height: 212px; }
 
   .title-item {
-    width: 270px; }
+    width: 305px; }
+
+  .title-item.for_bar {
+    width: 305px; }
 
   .bar {
-    margin: 5px 5px; } }
+    width: 305px;
+    margin: 5px 5px; }
+
+  .stock {
+    width: 305px; } }
