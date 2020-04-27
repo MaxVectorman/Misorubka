@@ -206,7 +206,8 @@ body {
       height: 445px;
       margin: 20px;
       border-radius: 5px;
-      background: #fff; }
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
     .menu-carts__title {
       display: flex;
       font-size: 18px;
@@ -250,7 +251,8 @@ body {
   border-radius: 5px;
   background: #fff;
   padding-bottom: 15px;
-  width: 1200px; }
+  width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
   .bar-title {
     display: flex;
     justify-content: center;
@@ -264,14 +266,14 @@ body {
       font-size: 18px;
       padding: 5px 30px;
       color: #555;
-      background: #bbb;
+      background: #cbcbcb;
       border-top: 1px solid #fff; }
   .bar-subject {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     color: #333;
-    margin: 40px 30px;
+    margin: 20px 30px;
     border-bottom: 1px solid #ddd;
     line-height: 28px; }
     .bar-subject__rus {
@@ -299,7 +301,6 @@ body {
 .bar-subject__price--sub {
   display: flex;
   justify-content: flex-end;
-  margin-left: 5px;
   width: 62px; }
 
 .price-variable {
@@ -346,7 +347,8 @@ body {
   background: #000;
   margin: 20px;
   overflow: hidden;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
 .stock:first-child {
   margin-top: 20px; }
