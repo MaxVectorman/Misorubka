@@ -252,7 +252,7 @@ body {
   background: #fff;
   padding-bottom: 15px;
   width: 1200px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
   .bar-title {
     display: flex;
     justify-content: center;
@@ -349,7 +349,7 @@ body {
   margin: 20px;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
 
 .stock:first-child {
   margin-top: 20px; }
