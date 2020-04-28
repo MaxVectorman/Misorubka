@@ -391,6 +391,15 @@ body {
 
   .stock {
     width: 870px; } }
+@media screen and (max-width: 813px) {
+  .header-menu {
+    height: 45px; }
+    .header-menu__link {
+      display: flex;
+      justify-content: center; }
+
+  .title-item.for_bar {
+    width: 772px; } }
 @media screen and (max-width: 768px) {
   .header {
     display: none; }
